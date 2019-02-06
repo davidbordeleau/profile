@@ -6,9 +6,28 @@ body {
   line-height: 2rem;
 }
 
+#sidebar {
+  position: fixed;
+  width: 130px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #384047;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#page-content {
+  margin-left: 220px;
+}
+
 #image-profile {
-  width: 30%;
+  width: 20%;
   border: 3px solid rgb(163, 159, 159);
+}
+
+.icon-padding {
+  padding-top: 50px;
 }
 
 .round-image {
@@ -17,8 +36,8 @@ body {
 
 .container {
   text-align: center;
-  margin: 0 auto;
-  width: 550px;
+  margin: 0;
+  width: 90%;
 }
 
 .card {
@@ -29,7 +48,7 @@ body {
   border-radius: 5px;
 }
 
-.list-inline > li {
+.list-inline>li {
   display: inline-block;
   padding: 0px 20px;
 }
@@ -40,6 +59,14 @@ body {
 
 .text-left {
   text-align: left;
+}
+
+.link-color {
+  color: #BD6B73;
+}
+
+.link-color:hover {
+  color: #69353F;
 }
 
 ul {
@@ -56,27 +83,25 @@ h3 {
 }
 
 a {
-  color: #BD6B73;
   text-decoration: none;
+  color: #7D7D7D;
 }
 
 a:hover {
-  color: #69353F;
+  color: white;
 }
 
-@media (max-width: 960px) {
-  .container {
-    width: 550px;
-  }
-}
-@media (max-width: 720px) {
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
+@media (max-width: 640px) {
   .container {
     width: 400px;
+  }
+
+  #page-content {
+    margin-left: 20px;
+  }
+
+  #sidebar {
+    display: none;
   }
 
 }
